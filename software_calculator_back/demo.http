@@ -1,0 +1,38 @@
+GET http://127.0.0.1:5000/cals
+Accept: application/json
+
+###
+POST http://127.0.0.1:5000/cals
+Content-Type: application/json
+
+{
+  "exp":"1+2" ,
+  "ans": 3
+}
+
+###
+POST http://127.0.0.1:5000/deposits
+Content-Type: application/json
+
+{
+    "deposit_time": 10,
+    "deposit_rate": 9
+}
+
+###
+PUT http://127.0.0.1:5000/deposits/10
+Content-Type: application/json
+
+{
+      "deposit_time": 15,
+      "deposit_rate": 10
+}
+###
+GET http://127.0.0.1:5000/deposits
+Accept: application/json
+
+###
+DELETE http://127.0.0.1:5000/cals/8
+Accept: application/json
+
+
